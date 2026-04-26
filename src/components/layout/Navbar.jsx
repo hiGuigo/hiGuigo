@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { FaDownload } from "react-icons/fa";
 
+import cv from "../../public/guilherme_alvarenga_curriculo.pdf"
+
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
@@ -70,7 +72,7 @@ export default function Navbar() {
 
           {/* CV BUTTON */}
           <a
-            href="../public/guilherme_alvarenga_curriculo.pdf"
+            href={cv}
             download
             className="
               flex items-center gap-2
@@ -116,7 +118,7 @@ export default function Navbar() {
 
           {/* CV MOBILE */}
           <a
-            href="../public/guilherme_alvarenga_curriculo.pdf"
+            href={cv}
             download
             className="
               flex items-center justify-center gap-2
