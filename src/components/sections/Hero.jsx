@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
-import profile from "../assets/images/profile/profile.jpg";
+import profile from "../../assets/images/profile/profile.jpg";
 
 export default function Hero() {
   const [copied, setCopied] = useState(false);
