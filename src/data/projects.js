@@ -1,9 +1,12 @@
+import koiAero from "../assets/images/projects/koi-aero.png";
+import koiCenso from "../assets/images/projects/koi-censo.jpg";
+
 export const projects = [
   {
     id: 1,
     title: "Plataforma de Gerenciamento de Normas Aeronáuticas",
     status: "em desenvolvimento",
-    image: "../src/assets/images/projects/koi-aero.png",
+    image: koiAero,
 
     problem:
       "O cliente utiliza um grande volume de normas técnicas ao longo do processo de engenharia, mas a consulta dessas normas é lenta e desorganizada.",
@@ -45,7 +48,7 @@ export const projects = [
   {
     id: 2,
     title: "Análise do Censo 2022 IBGE",
-    image: "../src/assets/images/projects/koi-censo.jpg",
+    image: koiCenso,
 
     problem:
       "Dados do IBGE são extensos, não padronizados e difíceis de analisar.",

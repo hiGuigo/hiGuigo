@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
+import profile from "../assets/images/profile/profile.jpg";
+
 export default function Hero() {
   const [copied, setCopied] = useState(false);
 
@@ -40,7 +42,7 @@ export default function Hero() {
       <div className="w-full md:w-1/2 min-h-[50vh] md:min-h-screen bg-white/5 border-r border-white/10 flex items-center justify-center">
         <div className="w-[clamp(10rem,30vw,20rem)] h-[clamp(10rem,30vw,20rem)] rounded-full border border-white/20 bg-white/10 overflow-hidden shadow-[0_0_30px_rgba(34,211,238,0.15)]">
           <img
-            src="../src/assets/images/profile/profile.jpg"
+            src={profile}
             alt="Guilherme"
             className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
           />
