@@ -32,7 +32,7 @@ export default function About() {
 
             <p>
               Tenho praticado a construção de <strong>aplicações</strong> que
-              integram <strong>interface</strong>,<strong>lógica</strong> e{" "}
+              integram <strong>interface</strong>, <strong>lógica</strong> e{" "}
               <strong>dados</strong>, incluindo um projeto em desenvolvimento
               com integração real entre <strong>front-end</strong> e{" "}
               <strong>back-end</strong>.
@@ -46,7 +46,7 @@ export default function About() {
               desenvolvimento de <strong>aplicações web completas</strong>, com
               foco em <strong>boas práticas</strong>,{" "}
               <strong>organização de código</strong>,{" "}
-              <strong>componentização</strong> e
+              <strong>componentização</strong> e{" "}
               <strong>integração entre sistemas</strong>.
             </p>
           </div>
