@@ -40,7 +40,7 @@ export default function Hero() {
     >
       {/* FOTO */}
       <div className="w-full md:w-1/2 min-h-[50vh] md:min-h-screen bg-white/5 border-r border-white/10 flex items-center justify-center">
-        <div className="w-[clamp(10rem,30vw,20rem)] h-[clamp(10rem,30vw,20rem)] rounded-full border border-white/20 bg-white/10 overflow-hidden shadow-[0_0_30px_rgba(34,211,238,0.15)]">
+        <div className="w-[clamp(20rem,40vw,20rem)] h-[clamp(20rem,40vw,20rem)] rounded-full border border-white/20 bg-white/10 overflow-hidden shadow-[0_0_30px_rgba(34,211,238,0.15)]">
           <img
             src={profile}
             alt="Guilherme"
@@ -54,7 +54,7 @@ export default function Hero() {
         <div className="flex flex-col gap-4 max-w-md">
 
           <span className="text-white/50 text-sm tracking-widest uppercase">
-            <span className="font-bold text-white">Boas vindas</span> ao meu portfólio
+            <span className="font-bold text-white">Boas vindas</span> ao meu portfólio!
           </span>
 
           <h1 className="text-4xl md:text-5xl font-bold text-cyan-400">

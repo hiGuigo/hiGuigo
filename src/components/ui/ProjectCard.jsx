@@ -38,7 +38,7 @@ export default function ProjectCard({ project }) {
           <h3 className="text-white font-semibold text-lg">{project.title}</h3>
 
           <p className="text-white/60 text-sm line-clamp-3">
-            {project.objective}
+            {project.description}
           </p>
 
           {/* FOOTER DO CARD */}
@@ -101,7 +101,8 @@ export default function ProjectCard({ project }) {
               max-w-3xl w-full
               bg-black border border-white/10
               rounded-xl p-6
-              overflow-y-auto max-h-[90vh]
+              overflow-y-auto max-h-[70vh]
+              no-scrollbar
             "
             onClick={(e) => e.stopPropagation()}
           >
@@ -109,9 +110,19 @@ export default function ProjectCard({ project }) {
               {project.title}
             </h2>
 
-            <p className="text-white/70 mb-4">{project.problem}</p>
-            <p className="text-white/70 mb-4">{project.solution}</p>
-            <p className="text-white/70 mb-4">{project.result}</p>
+            <p className="text-white/70 mb-4 text-xs font-bold">
+              {project.status}
+            </p>
+
+            <p className="text-white/70 mb-4">
+              <strong>Objetivo</strong>: {project.objective}
+            </p>
+            <p className="text-white/70 mb-4">
+              <strong>Solução</strong>: {project.solution}
+            </p>
+            <p className="text-white/70 mb-4">
+              <strong>Resultado</strong>: {project.objective}
+            </p>
 
             {/* TECNOLOGIAS */}
             <div className="flex flex-wrap gap-2 mb-4">
@@ -126,11 +137,32 @@ export default function ProjectCard({ project }) {
             </div>
 
             {/* CONTRIBUIÇÃO */}
+            <p className="text-white/70 mb-4">
+              <strong>Minha contribuição:</strong>
+            </p>
             <ul className="list-disc pl-5 text-white/60 text-sm space-y-1">
               {project.contribution.map((c) => (
                 <li key={c}>{c}</li>
               ))}
             </ul>
+
+            {/* INDICADOR DE SCROLL */}
+            <div className="pointer-events-none absolute bottom-3 left-1/2 -translate-x-1/2 flex flex-col items-center animate-bounce">
+              <span className="text-white text-sm mb-1">scroll</span>
+              <svg
+                className="w-5 h-5 text-white/40"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </div>
           </div>
         </div>
       )}
