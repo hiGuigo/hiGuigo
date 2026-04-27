@@ -7,9 +7,9 @@ import About from "./components/sections/About";
 import Projects from "./components/sections/Projects";
 import Certificates from "./components/sections/Certificates";
 import GitHubInsights from "./components/sections/GitHubInsights";
+import Education from "./components/sections/Education";
 
 import "./app.css";
-import Education from "./components/sections/Education";
 
 function App() {
   return (
