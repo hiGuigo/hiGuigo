@@ -52,14 +52,17 @@ export default function Hero() {
       {/* CONTEÚDO */}
       <div className="w-full md:w-1/2 min-h-[50vh] flex items-center justify-center px-8 py-16">
         <div className="flex flex-col gap-4 max-w-md">
-
-          <span className="text-white/50 text-sm tracking-widest uppercase">
-            <span className="font-bold text-white">Boas vindas</span> ao meu portfólio!
+          <span className="text-white/50 text-md tracking-widest uppercase">
+            <span className="font-bold text-white">Boas vindas</span> ao meu
+            portfólio!
           </span>
 
-          <h1 className="text-4xl md:text-5xl font-bold text-cyan-400">
-            Guilherme
-          </h1>
+          <div className="flex items-end gap-2 font-bold">
+            <p className="text-2xl text-white">Eu me chamo</p>{" "}
+            <p className="text-4xl md:text-5xl text-cyan-400">
+              Guilherme!
+            </p>
+          </div>
 
           <p className="text-white/60 leading-relaxed">
             Desenvolvedor Front-End focado em criar interfaces modernas,
@@ -125,7 +128,6 @@ export default function Hero() {
               );
             })}
           </div>
-
         </div>
       </div>
     </section>
