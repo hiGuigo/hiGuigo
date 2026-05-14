@@ -73,7 +73,7 @@ export default function Navbar() {
           {/* CV BUTTON */}
           <a
             href={cv}
-            download
+            download="guilherme_alvarenga_curriculo.pdf"
             className="
               flex items-center gap-2
               px-4 py-2
