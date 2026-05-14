@@ -121,7 +121,7 @@ export default function ProjectCard({ project }) {
               <strong>Solução</strong>: {project.solution}
             </p>
             <p className="text-white/70 mb-4">
-              <strong>Resultado</strong>: {project.objective}
+              <strong>Resultado</strong>: {project.result}
             </p>
 
             {/* TECNOLOGIAS */}
