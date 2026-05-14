@@ -15,7 +15,7 @@ Error generating stack: `+e.message+`
                 hover:text-cyan-300
                 transition-all duration-300
                 hover:scale-110
-              `,children:[e.label,(0,b.jsx)(`span`,{className:`absolute left-0 -bottom-1 w-0 h-0.5 bg-cyan-400 transition-all duration-300 hover:w-full`})]},e.href)),(0,b.jsxs)(`a`,{href:me,download:!0,className:`
+              `,children:[e.label,(0,b.jsx)(`span`,{className:`absolute left-0 -bottom-1 w-0 h-0.5 bg-cyan-400 transition-all duration-300 hover:w-full`})]},e.href)),(0,b.jsxs)(`a`,{href:me,download:`guilherme_alvarenga_curriculo.pdf`,className:`
               flex items-center gap-2
               px-4 py-2
               rounded-full
