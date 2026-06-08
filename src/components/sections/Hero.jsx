@@ -39,7 +39,7 @@ export default function Hero() {
       className="min-h-screen flex flex-col md:flex-row text-white bg-black"
     >
       {/* FOTO */}
-      <div className="w-full md:w-1/2 min-h-[50vh] md:min-h-screen bg-white/5 border-r border-white/10 flex items-center justify-center">
+      <div className="w-full md:w-1/2 min-h-[60vh] md:min-h-screen bg-white/5 border-r border-white/10 flex items-center justify-center">
         <div className="w-[clamp(20rem,40vw,20rem)] h-[clamp(20rem,40vw,20rem)] rounded-full border border-white/20 bg-white/10 overflow-hidden shadow-[0_0_30px_rgba(34,211,238,0.15)]">
           <img
             src={profile}
@@ -50,7 +50,7 @@ export default function Hero() {
       </div>
 
       {/* CONTEÚDO */}
-      <div className="w-full md:w-1/2 min-h-[50vh] flex items-center justify-center px-8 py-16">
+      <div className="w-full md:w-1/2 min-h-[40vh] flex items-center justify-center px-8 py-16">
         <div className="flex flex-col gap-4 max-w-md">
           <span className="text-white/50 text-md tracking-widest uppercase">
             <span className="font-bold text-white">Boas vindas</span> ao meu
