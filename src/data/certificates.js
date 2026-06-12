@@ -18,7 +18,7 @@ export const certificates = [
   },
   {
     id: 3,
-    title: "Proeficiência em Inglês",
+    title: "Proficiência em Inglês",
     issuer: "EF SET",
     image: ingles,
   },
