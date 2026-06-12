@@ -138,7 +138,7 @@ export default function ProjectCard({ project }) {
 
             {/* CONTRIBUIÇÃO */}
             <p className="text-white/70 mb-4">
-              <strong>Minha contribuição:</strong>
+              <strong>{project.contributionDesc}</strong>
             </p>
             <ul className="list-disc pl-5 text-white/60 text-sm space-y-1">
               {project.contribution.map((c) => (

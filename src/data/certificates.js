@@ -1,6 +1,7 @@
 import diplomaAds from "../assets/images/certificates/diploma_ads.jpg";
 import escolaInovadores from "../assets/images/certificates/certificado_escola_de_inovadores.jpg";
 import ingles from "../assets/images/certificates/ingles.jpg"
+import gitgithub from "../assets/images/certificates/git_github_fgv.jpg"
 
 export const certificates = [
   {
@@ -20,5 +21,11 @@ export const certificates = [
     title: "Proeficiência em Inglês",
     issuer: "EF SET",
     image: ingles,
+  },
+  {
+    id: 4,
+    title: "Git & GitHub",
+    issuer: "FGV - Fundação Getúlio Vargas",
+    image: gitgithub,
   },
 ];

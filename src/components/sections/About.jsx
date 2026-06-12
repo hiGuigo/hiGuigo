@@ -13,7 +13,7 @@ export default function About() {
 
   return (
     <Section id="about">
-      <div className="max-w-6xl mx-auto px-6">
+      <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-cyan-400 mb-12">
           Sobre mim
         </h2>
