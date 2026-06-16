@@ -94,7 +94,7 @@ export const projects = [
     ],
 
     github: "https://github.com/koitech-aero",
-    demo: "https://www.youtube.com/watch?v=jP18nC-Def4",
+    demo: "https://www.youtube.com/watch?v=eS4vuLcupuk",
   },
 
   {
@@ -143,6 +143,6 @@ export const projects = [
     ],
 
     github: "https://github.com/hiGuigo/AV3-TPI",
-    demo: "",
+    demo: "#",
   },
 ];
