@@ -9,17 +9,6 @@ export function useGithubInsights(username) {
   useEffect(() => {
     async function load() {
       try {
-        const cacheKey = `gh_insights_${username}`;
-        const cached = localStorage.getItem(cacheKey);
-
-        if (cached) {
-          const data = JSON.parse(cached);
-          setRepos(data.repos);
-          setLanguages(data.languages);
-          setLoading(false);
-          return;
-        }
-
         const data = await getUserRepos(username);
 
         const sorted = data
@@ -40,11 +29,6 @@ export function useGithubInsights(username) {
 
         setRepos(sorted);
         setLanguages(langArray);
-
-        localStorage.setItem(
-          cacheKey,
-          JSON.stringify({ repos: sorted, languages: langArray }),
-        );
       } catch (err) {
         console.error(err);
       } finally {
