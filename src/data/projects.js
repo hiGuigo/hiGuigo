@@ -137,7 +137,7 @@ export const projects = [
       "Criptografia de senhas utilizando o Bcrypt",
       "Utilização de JWT para autenticação de usuário no login",
       "Rotas protegidas e com verificação de permissões (RBAC)",
-      "Análize de latência, tempo de processamento e tempo de resposta",
+      "Análise de latência, tempo de processamento e tempo de resposta",
       "Testes críticos de requisições simultâneas (1, 5 e 10 usuários)",
       "Relatório com análise dos resultados obtidos nos testes de desempenho",
     ],
