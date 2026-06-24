@@ -139,7 +139,7 @@ Error generating stack: `+e.message+`
               rounded-xl p-6
               overflow-y-auto max-h-[80vh]
               no-scrollbar
-            `,onClick:e=>e.stopPropagation(),children:(0,b.jsx)(`img`,{src:e.image,alt:e.title,className:`w-full h-full object-contain bg-black`})})})]})}var we=`https://api.github.com`;async function Te(e){let t=await fetch(`${we}/users/${e}/repos`);if(!t.ok){let e=await t.text();throw console.error(`GitHub API Error:`,{status:t.status,body:e}),Error(`Erro ${t.status}`)}return t.json()}function Ee(e){let[t,n]=(0,_.useState)([]),[r,i]=(0,_.useState)([]),[a,o]=(0,_.useState)(!0);return(0,_.useEffect)(()=>{async function t(){try{let t=await Te(e),r=t.sort((e,t)=>new Date(t.updated_at)-new Date(e.updated_at)).slice(0,6),a={};t.forEach(e=>{e.language&&(a[e.language]=(a[e.language]||0)+1)});let o=Object.entries(a).map(([e,t])=>({name:e,count:t})).sort((e,t)=>t.count-e.count);n(r),i(o)}catch(e){console.error(e)}finally{o(!1)}}t()},[e]),{repos:t,languages:r,loading:a}}function De({repo:e}){return(0,b.jsxs)(`div`,{className:`
+            `,onClick:e=>e.stopPropagation(),children:(0,b.jsx)(`img`,{src:e.image,alt:e.title,className:`w-full h-full object-contain bg-black`})})})]})}var we=`https://api.github.com`;async function Te(e){let t=await fetch(`${we}/users/${e}/repos`);if(!t.ok){let e=await t.text();throw console.error(`GitHub API Error:`,{status:t.status,body:e}),Error(`Erro ${t.status}`)}return t.json()}function Ee(e){let[t,n]=(0,_.useState)([]),[r,i]=(0,_.useState)([]),[a,o]=(0,_.useState)(!0);return(0,_.useEffect)(()=>{async function t(){try{let t=await Te(e),r=t.sort((e,t)=>new Date(t.updated_at)-new Date(e.updated_at)).slice(0,6),a={};t.forEach(e=>{e.language&&(a[e.language]=(a[e.language]||0)+1)});let o=Object.entries(a).map(([e,t])=>({name:e,count:t})).sort((e,t)=>t.count-e.count);n(r),i(o)}catch(e){console.error(e)}finally{o(!1)}}t()},[e]),{repos:t,languages:r,loading:a}}function De({repo:e}){return(0,b.jsx)(`a`,{href:e.html_url,target:`_blank`,children:(0,b.jsxs)(`div`,{className:`
         p-4 rounded-xl
         border border-white/10
         bg-white/5
@@ -147,7 +147,7 @@ Error generating stack: `+e.message+`
         hover:border-cyan-400
         hover:shadow-[0_0_15px_rgba(34,211,238,0.2)]
         hover:-translate-y-1
-      `,children:[(0,b.jsx)(`h3`,{className:`text-white font-semibold`,children:e.name}),(0,b.jsx)(`p`,{className:`text-white/50 text-sm mt-2 line-clamp-2`,children:e.description||`Sem descrição`}),(0,b.jsx)(`div`,{className:`text-xs text-cyan-300 mt-3`,children:e.language})]})}function Oe({lang:e}){return(0,b.jsxs)(`span`,{className:`
+      `,children:[(0,b.jsx)(`h3`,{className:`text-white font-semibold`,children:e.name}),(0,b.jsx)(`p`,{className:`text-white/50 text-sm mt-2 line-clamp-2`,children:e.description||`Sem descrição`}),(0,b.jsx)(`div`,{className:`text-xs text-cyan-300 mt-3`,children:e.language})]})})}function Oe({lang:e}){return(0,b.jsxs)(`span`,{className:`
         px-3 py-1 text-xs
         rounded-full
         bg-white/5

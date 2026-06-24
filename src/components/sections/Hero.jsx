@@ -59,14 +59,13 @@ export default function Hero() {
 
           <div className="flex items-end gap-2 font-bold">
             <p className="text-2xl text-white">Eu me chamo</p>{" "}
-            <p className="text-4xl md:text-5xl text-cyan-400">
-              Guilherme!
-            </p>
+            <p className="text-4xl md:text-5xl text-cyan-400">Guilherme!</p>
           </div>
 
           <p className="text-white/60 leading-relaxed">
-            Desenvolvedor Front-End focado em criar interfaces modernas,
-            responsivas e com experiências fluidas utilizando React e Tailwind.
+            Desenvolvedor Full Stack focado em transformar ideias em soluções
+            digitais, criando interfaces intuitivas, aplicações robustas e
+            sistemas escaláveis.
           </p>
 
           {/* ÍCONES */}
