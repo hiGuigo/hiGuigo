@@ -27,12 +27,6 @@ Gosto de transformar ideias em soluções funcionais, criando aplicações que u
 - Evoluir tecnicamente como desenvolvedor Full Stack
 - Participar de projetos que gerem impacto real para usuários e empresas
 
-### GitHub Stats
-
-<p align="center">
-  <img height="170em" src="https://github-stats-extended.vercel.app/api?username=hiGuigo&include_all_commits=true&theme=dark_github" />
-</p>
-
 ## Aerocode - Projeto em Destaque
 
 <a href="https://github.com/hiGuigo/Aerocode"><strong>Acesse aqui o repositório do projeto!</strong></a>
