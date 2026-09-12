@@ -30,8 +30,7 @@ Gosto de transformar ideias em soluções funcionais, criando aplicações que u
 ### GitHub Stats
 
 <p align="center">
-  <img height="170em" src="https://github-readme-stats.vercel.app/api?username=hiGuigo&show_icons=true&theme=tokyonight" />
-  <img height="170em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=hiGuigo&layout=compact&theme=tokyonight" />
+  <img height="170em" src="[https://github-readme-stats.vercel.app/api?username=hiGuigo&show_icons=true&theme=tokyonight](https://github-stats-extended.vercel.app/api?username=hiGuigo&include_all_commits=true&theme=dark_github)](https://github-stats-extended.vercel.app/api?username=hiGuigo&include_all_commits=true&theme=dark_github)" />
 </p>
 
 ## Aerocode - Projeto em Destaque
