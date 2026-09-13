@@ -1,7 +1,7 @@
 <h1 align="center">Olá, eu sou Guilherme Alvarenga 👋</h1>
 
 <p align="center">
-  Desenvolvedor Front-End em transição para Full Stack
+  Acesse minhas redes!
 </p>
 
 <p align="center">
@@ -9,22 +9,21 @@
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin" />
   </a>
   <a href="https://higuigo.github.io/hiGuigo/">
-    <img src="https://img.shields.io/badge/Portfólio-00C7B7?style=for-the-badge&" />
+    <img src="https://img.shields.io/badge/Portfólio-00C7B7?style=for-the-badge" />
   </a>
 </p>
 
 ## Sobre mim
 
-Sou estudante de Desenvolvimento de Software Multiplataforma e desenvolvedor com foco em aplicações web modernas.
+Sou um desenvolvedor de software com experiência em aplicações full stack, focado na construção de interfaces modernas, responsivas e orientadas a dados. Experiência com React, arquitetura RESTful e manipulação de dados com Python.
 
-Atualmente concentro meus estudos em React, TypeScript e Node.js, buscando ampliar meus conhecimentos em desenvolvimento Full Stack, integração de APIs REST e boas práticas de arquitetura de software.
-
-Gosto de transformar ideias em soluções funcionais, criando aplicações que unem experiência do usuário, lógica de negócio e organização de código.
+Atualmente concentro meus estudos em Programação orientada a objetos, Design Patterns, Spring e Java e boas práticas an construção de projetos de software.
 
 ### Objetivos
 
 - Conquistar uma oportunidade de estágio ou desenvolvedor júnior
-- Evoluir tecnicamente como desenvolvedor Full Stack
+- Evoluir tecnicamente como desenvolvedor de software
+- Aplicar conceitos de arquitetura de software e código limpo em contexto profissional
 - Participar de projetos que gerem impacto real para usuários e empresas
 
 ## Aerocode - Projeto em Destaque
