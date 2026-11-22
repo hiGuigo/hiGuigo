@@ -1,102 +1,46 @@
-<h1 align="center">Olá, eu sou Guilherme Alvarenga 👋</h1>
+<div align="center">
 
-<p align="center">
-  Acesse minhas redes!
-</p>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0EA5E9,100:6366F1&height=180&section=header&text=Guilherme%20Alvarenga&fontSize=38&fontColor=ffffff&animation=fadeIn&fontAlignY=36&desc=Desenvolvedor%20em%20forma%C3%A7%C3%A3o%20%7C%20FATEC&descAlignY=58&descSize=16" alt="Banner de Guilherme Alvarenga" />
 
-<p align="center">
-  <a href="https://www.linkedin.com/in/guilhermealvarenga021/">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin" />
-  </a>
-  <a href="https://higuigo.github.io/hiGuigo/">
-    <img src="https://img.shields.io/badge/Portfólio-00C7B7?style=for-the-badge" />
-  </a>
-</p>
+Desenvolvimento de Software Multiplataforma na FATEC<br />
+Foco atual: Java · Spring Boot · Back-end<br />
+Aberto a oportunidades de estágio
 
-## Sobre mim
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=&logoColor=white)](https://www.linkedin.com/in/guilhermealvarenga021/)
+[![Portfólio](https://img.shields.io/badge/Portf%C3%B3lio-111827?style=for-the-badge&logo=&logoColor=white)](https://higuigo.github.io/hiGuigo/)
+[![Currículo](https://img.shields.io/badge/Curr%C3%ADculo-DC2626?style=for-the-badge&logo=&logoColor=white)](https://github.com/hiGuigo/hiGuigo/blob/main/src/public/guilherme_alvarenga_curriculo.pdf)
 
-Sou um desenvolvedor de software com experiência em aplicações full stack, focado na construção de interfaces modernas, responsivas e orientadas a dados. Experiência com React, arquitetura RESTful e manipulação de dados com Python.
+</div>
 
-Atualmente concentro meus estudos em Programação orientada a objetos, Design Patterns, Spring e Java e boas práticas an construção de projetos de software.
+---
 
-### Objetivos
+## Minha Stack
 
-- Conquistar uma oportunidade de estágio ou desenvolvedor júnior
-- Evoluir tecnicamente como desenvolvedor de software
-- Aplicar conceitos de arquitetura de software e código limpo em contexto profissional
-- Participar de projetos que gerem impacto real para usuários e empresas
+<div align="center">
 
-## Aerocode - Projeto em Destaque
+<img src="https://skillicons.dev/icons?i=java,spring,js,ts,react,nodejs,python,mysql,mongodb,git&theme=dark" alt="Java, Spring, JavaScript, TypeScript, React, Node.js, Python, MySQL, MongoDB e Git" />
 
-<a href="https://github.com/hiGuigo/Aerocode"><strong>Acesse aqui o repositório do projeto!</strong></a>
+</div>
 
-O Aerocode é um sistema web Full Stack desenvolvido para gerenciamento de processos e dados críticos de uma empresa fictícia que fabrica aeronaves.
+## Projetos em destaque
 
-O projeto foi construído utilizando uma arquitetura moderna baseada em Node.js, TypeScript, React e MySQL, contemplando desde a persistência de dados até a análise de desempenho da aplicação.
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>✈️ <a href="https://github.com/hiGuigo/aerocode">Aerocode</a></h3>
+      <p>Aplicação full stack para gestão de processos aeronáuticos, com análise de desempenho.</p>
+      <p><sub>React · TypeScript · Node.js · MySQL · Prisma</sub></p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>📊 <a href="https://github.com/koitech-API">Análise do Censo 2022</a></h3>
+      <p>Dados do IBGE transformados em visualizações interativas. Atuei como Product Owner e no pipeline de dados.</p>
+      <p><sub>Projeto em equipe · Python · Pandas · Plotly</sub></p>
+    </td>
+  </tr>
+</table>
 
-### Objetivo
+<div align="center">
 
-Desenvolver uma aplicação completa utilizando conceitos de Programação Orientada a Objetos, arquitetura em camadas e integração entre front-end e back-end, além de realizar análises de desempenho para avaliar a disponibilidade e escalabilidade do sistema.
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:6366F1,100:0EA5E9&height=90&section=footer" alt="" />
 
-### Principais Funcionalidades
-
-- Gerenciamento de usuários
-- Controle de permissões baseado em cargos (RBAC)
-- Cadastro e gerenciamento de aeronaves
-- Controle de peças e componentes
-- Gerenciamento de etapas de produção
-- Registro e acompanhamento de testes
-- Geração de relatórios operacionais
-- Autenticação e autorização de usuários
-- Rotas protegidas por permissões
-- Monitoramento de métricas de desempenho
-
-### Tecnologias Utilizadas
-
-#### Front-End
-
-- React
-- TypeScript
-- Tailwind CSS
-
-#### Back-End
-
-- Node.js
-- TypeScript
-- Express
-
-#### Banco de Dados
-
-- MySQL
-- Prisma ORM
-
-#### Segurança
-
-- JWT (JSON Web Token)
-- Bcrypt
-
-### Conceitos Aplicados
-
-- Programação Orientada a Objetos (POO)
-- Arquitetura em camadas
-- Controllers, Services e Repositories
-- APIs REST
-- Validação de dados
-- Controle de acesso baseado em funções (RBAC)
-- Persistência de dados com ORM
-- Boas práticas de desenvolvimento
-
-### Análise de Desempenho
-
-O projeto também incluiu uma etapa dedicada à avaliação de desempenho da aplicação, contemplando:
-
-- Medição de latência
-- Tempo de processamento
-- Tempo de resposta
-- Testes simultâneos com 1, 5 e 10 usuários
-- Avaliação da disponibilidade do sistema
-- Relatório técnico com análise dos resultados obtidos
-
-### Conclusão
-
-Durante o desenvolvimento do AV3-TPI, aprofundei conhecimentos em arquitetura de software, autenticação e autorização, integração entre aplicações, modelagem de banco de dados, organização de código em camadas e análise de desempenho de sistemas web.
+</div>
