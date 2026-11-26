@@ -80,7 +80,7 @@ export default function Certificates() {
             role="dialog"
             aria-modal="true"
             aria-label={selectedCertificate.title}
-            className="relative max-h-[85vh] w-full max-w-4xl overflow-y-auto rounded-xl border border-white/10 bg-black p-4 pt-14 sm:p-6 sm:pt-14"
+            className="themed-scrollbar relative max-h-[85vh] w-full max-w-4xl overflow-y-auto rounded-xl border border-white/10 bg-black p-4 pt-14 sm:p-6 sm:pt-14"
             onClick={(event) => event.stopPropagation()}
           >
             <button

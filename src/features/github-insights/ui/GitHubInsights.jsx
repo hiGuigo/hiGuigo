@@ -25,10 +25,12 @@ export default function GitHubInsights() {
       ) : (
         <>
           {/* LANGUAGES */}
-          <div className="flex flex-wrap gap-3 mb-10">
-            {languages.map((lang) => (
-              <LanguageBadge key={lang.name} lang={lang} />
-            ))}
+          <div className="mb-10">
+            <div className="flex flex-wrap gap-3">
+              {languages.map((lang) => (
+                <LanguageBadge key={lang.name} lang={lang} />
+              ))}
+            </div>
           </div>
 
           {/* REPOS */}

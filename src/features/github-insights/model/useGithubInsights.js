@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
-import { getUserRepos } from "../api/githubService";
+import { getRepoLanguages, getUserRepos } from "../api/githubService";
+
+const REPOSITORY_LIMIT = 6;
 
 export function useGithubInsights(username) {
   const [repos, setRepos] = useState([]);
@@ -8,37 +10,59 @@ export function useGithubInsights(username) {
   const [error, setError] = useState(false);
 
   useEffect(() => {
+    let active = true;
+
     async function load() {
+      setLoading(true);
+      setError(false);
+
       try {
         const data = await getUserRepos(username);
+        const latestRepos = data
+          .toSorted((a, b) => new Date(b.updated_at) - new Date(a.updated_at))
+          .slice(0, REPOSITORY_LIMIT);
 
-        const sorted = data
-          .sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at))
-          .slice(0, 6);
+        const reposWithLanguages = await Promise.all(
+          latestRepos.map(async (repo) => {
+            try {
+              const languageBytes = await getRepoLanguages(repo.languages_url);
+              return { ...repo, languages: Object.keys(languageBytes) };
+            } catch {
+              return {
+                ...repo,
+                languages: repo.language ? [repo.language] : [],
+              };
+            }
+          }),
+        );
 
-        const langMap = {};
-
-        data.forEach((repo) => {
-          if (!repo.language) return;
-
-          langMap[repo.language] = (langMap[repo.language] || 0) + 1;
+        const languageCounts = new Map();
+        reposWithLanguages.forEach((repo) => {
+          new Set(repo.languages).forEach((language) => {
+            languageCounts.set(language, (languageCounts.get(language) || 0) + 1);
+          });
         });
 
-        const langArray = Object.entries(langMap)
+        const languageList = [...languageCounts]
           .map(([name, count]) => ({ name, count }))
-          .sort((a, b) => b.count - a.count);
+          .sort((a, b) => b.count - a.count || a.name.localeCompare(b.name));
 
-        setRepos(sorted);
-        setLanguages(langArray);
-      } catch (err) {
-        console.error(err);
-        setError(true);
+        if (active) {
+          setRepos(reposWithLanguages);
+          setLanguages(languageList);
+        }
+      } catch (loadError) {
+        console.error(loadError);
+        if (active) setError(true);
       } finally {
-        setLoading(false);
+        if (active) setLoading(false);
       }
     }
 
     load();
+    return () => {
+      active = false;
+    };
   }, [username]);
 
   return { repos, languages, loading, error };

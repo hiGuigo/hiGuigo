@@ -1,16 +1,6 @@
 import Section from "../../../shared/ui/Section";
 
 export default function About() {
-  const experiences = [
-    "Comunicação: alinhamento direto com cliente para definição de requisitos e entregas de valor",
-    "Trabalho em equipe: colaboração com o time no desenvolvimento e organização das atividades",
-    "Organização e planejamento: definição de escopo, tarefas e manutenção da documentação do projeto",
-    "Visão de produto: priorização de funcionalidades com foco em valor e viabilidade de entrega",
-    "Responsabilidade: acompanhamento de demandas e comprometimento com prazos",
-    "Resolução de problemas: atuação prática no desenvolvimento, principalmente com React",
-    "Adaptabilidade: equilíbrio entre necessidades de negócio e implementação técnica",
-  ];
-
   return (
     <Section id="about">
       <div>
@@ -18,58 +8,43 @@ export default function About() {
           Sobre mim
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-          {/* TEXTO */}
-          <div className="text-white/60 leading-relaxed space-y-4">
-            <p>
-              Sou um <strong>desenvolvedor em formação</strong> com foco em me
-              tornar <strong>full stack</strong>, atualmente direcionando meus
-              estudos para <strong>front-end</strong> com <strong>React</strong>
-              , além de fundamentos em <strong>JavaScript</strong>,{" "}
-              <strong>TypeScript</strong>, <strong>Node.js</strong> e{" "}
-              <strong>APIs REST</strong>.
-            </p>
+        <div className="max-w-4xl space-y-5 text-justify leading-relaxed text-white/70">
+          <p>
+            Sou Guilherme Alvarenga, tecnólogo em Análise e Desenvolvimento de
+            Sistemas e atualmente estudante de Desenvolvimento de Software
+            Multiplataforma na FATEC. No início da minha trajetória, atuei como
+            estagiário desenvolvendo e mantendo páginas web com HTML, CSS e C#,
+            além de dar suporte a dados em SQL Server.
+          </p>
+          <p>
+            Nos projetos, tenho trabalhado entre desenvolvimento web e dados:
+            desde entender o problema e organizar requisitos até implementar
+            interfaces, integrações e visualizações que ajudam pessoas a
+            encontrar e usar informação. Busco uma oportunidade de estágio ou
+            uma posição júnior em desenvolvimento de software.
+          </p>
+        </div>
 
-            <p>
-              Tenho praticado a construção de <strong>aplicações</strong> que
-              integram <strong>interface</strong>, <strong>lógica</strong> e{" "}
-              <strong>dados</strong>, incluindo um projeto em desenvolvimento
-              com integração real entre <strong>front-end</strong> e{" "}
-              <strong>back-end</strong>.
-            </p>
+        <div className="mt-8 max-w-4xl">
+          <p className="border-t border-white/10 pt-4 text-sm text-white/50">
+            <strong className="font-semibold text-cyan-300">
+              Palavras-chave:
+            </strong>{" "}
+            desenvolvimento web; React; TypeScript; APIs REST; Node.js; SQL
+            Server; Python; análise de dados; Java; Spring.
+          </p>
+        </div>
 
-            <p>
-              Meu objetivo a curto prazo é conseguir um <strong>estágio</strong>{" "}
-              como <strong>desenvolvedor</strong>, visando evoluir para{" "}
-              <strong>júnior</strong>. No longo prazo, pretendo me consolidar
-              como <strong>desenvolvedor full stack pleno</strong>, atuando no
-              desenvolvimento de <strong>aplicações web completas</strong>, com
-              foco em <strong>boas práticas</strong>,{" "}
-              <strong>organização de código</strong>,{" "}
-              <strong>componentização</strong> e{" "}
-              <strong>integração entre sistemas</strong>.
-            </p>
-          </div>
-
-          {/* EXPERIÊNCIAS */}
-          <div className="flex flex-col gap-4">
-            {experiences.map((item, i) => (
-              <div
-                key={i}
-                className="
-                  flex items-start gap-3 p-3 rounded-lg
-                  border border-white/10 bg-white/5
-                  transition-all duration-300
-                  hover:border-cyan-400
-                  hover:shadow-[0_0_12px_rgba(34,211,238,0.3)]
-                  hover:translate-x-1
-                "
-              >
-                <span className="text-cyan-400 mt-1">•</span>
-                <p className="text-white/70 text-sm leading-relaxed">{item}</p>
-              </div>
-            ))}
-          </div>
+        <div className="mt-6 max-w-4xl rounded-xl border border-cyan-400/20 bg-cyan-400/5 p-5">
+          <h3 className="mb-2 font-semibold text-cyan-300">
+            O que estou aprendendo agora
+          </h3>
+          <p className="text-justify text-sm leading-relaxed text-white/70">
+            Estou aprofundando meus conhecimentos em programação orientada a
+            objetos, Java, Spring, padrões de projeto e boas práticas de
+            arquitetura, enquanto continuo desenvolvendo projetos com React,
+            APIs REST e Python.
+          </p>
         </div>
       </div>
     </Section>

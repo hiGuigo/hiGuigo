@@ -1,18 +1,20 @@
 const BASE_URL = "https://api.github.com";
 
-export async function getUserRepos(username) {
-  const res = await fetch(`${BASE_URL}/users/${username}/repos`);
+async function getJson(url) {
+  const response = await fetch(url);
 
-  if (!res.ok) {
-    const error = await res.text();
-
-    console.error("GitHub API Error:", {
-      status: res.status,
-      body: error,
-    });
-
-    throw new Error(`Erro ${res.status}`);
+  if (!response.ok) {
+    throw new Error(`GitHub API error: ${response.status}`);
   }
 
-  return res.json();
+  return response.json();
+}
+
+export function getUserRepos(username) {
+  const params = new URLSearchParams({ per_page: "6", sort: "updated" });
+  return getJson(`${BASE_URL}/users/${username}/repos?${params}`);
+}
+
+export function getRepoLanguages(languagesUrl) {
+  return getJson(languagesUrl);
 }

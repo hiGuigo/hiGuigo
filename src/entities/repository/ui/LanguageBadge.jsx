@@ -1,15 +1,8 @@
 export default function LanguageBadge({ lang }) {
   return (
-    <span
-      className="
-        px-3 py-1 text-xs
-        rounded-full
-        bg-white/5
-        border border-white/10
-        text-white/60
-      "
-    >
-      {lang.name} ({lang.count})
+    <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/70">
+      <span>{lang.name}</span>
+      <span className="text-white/40">{lang.count}</span>
     </span>
   );
 }

@@ -35,37 +35,35 @@ export default function ProjectCard({ project }) {
             {project.description}
           </p>
 
-          <div className="mt-auto flex flex-col gap-3 pt-4">
-            <div className="flex gap-4">
+          <div className="mt-auto flex items-center gap-3 pt-4">
+            <a
+              href={project.github}
+              target="_blank"
+              rel="noreferrer"
+              aria-label={`Abrir repositório GitHub de ${project.title}`}
+              className="flex h-9 w-9 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white/70 transition-all duration-300 hover:scale-110 hover:border-cyan-400 hover:text-cyan-300 hover:shadow-[0_0_10px_rgba(34,211,238,0.4)]"
+            >
+              <FaGithub size={18} aria-hidden="true" />
+            </a>
+
+            {project.demo && project.demo !== "#" && (
               <a
-                href={project.github}
+                href={project.demo}
                 target="_blank"
                 rel="noreferrer"
-                aria-label={`Abrir repositório GitHub de ${project.title}`}
+                aria-label={`Assistir demonstração de ${project.title}`}
                 className="flex h-9 w-9 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white/70 transition-all duration-300 hover:scale-110 hover:border-cyan-400 hover:text-cyan-300 hover:shadow-[0_0_10px_rgba(34,211,238,0.4)]"
               >
-                <FaGithub size={18} aria-hidden="true" />
+                <FaYoutube size={18} aria-hidden="true" />
               </a>
-
-              {project.demo && project.demo !== "#" && (
-                <a
-                  href={project.demo}
-                  target="_blank"
-                  rel="noreferrer"
-                  aria-label={`Assistir demonstração de ${project.title}`}
-                  className="flex h-9 w-9 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white/70 transition-all duration-300 hover:scale-110 hover:border-cyan-400 hover:text-cyan-300 hover:shadow-[0_0_10px_rgba(34,211,238,0.4)]"
-                >
-                  <FaYoutube size={18} aria-hidden="true" />
-                </a>
-              )}
-            </div>
-
+            )}
             <button
               type="button"
               onClick={() => setOpen(true)}
-              className="self-start text-left text-sm text-white/50 transition-colors hover:text-cyan-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-cyan-400"
+              aria-label={`Ver detalhes de ${project.title}`}
+              className="inline-flex h-9 cursor-pointer items-center rounded-full border border-white/10 bg-white/5 px-3 text-sm text-white/70 transition-all duration-300 hover:scale-110 hover:border-cyan-400 hover:text-cyan-300 hover:shadow-[0_0_10px_rgba(34,211,238,0.4)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-cyan-300"
             >
-              Ver detalhes do projeto <span aria-hidden="true">→</span>
+              detalhes →
             </button>
           </div>
         </div>
@@ -82,7 +80,7 @@ export default function ProjectCard({ project }) {
             aria-modal="true"
             aria-labelledby={`project-title-${project.id}`}
             onClick={(event) => event.stopPropagation()}
-            className="relative max-h-[85vh] w-full max-w-3xl overflow-y-auto rounded-xl border border-white/10 bg-black p-5 pt-14 sm:p-6 sm:pt-14"
+            className="themed-scrollbar relative max-h-[85vh] w-full max-w-3xl overflow-y-auto rounded-xl border border-white/10 bg-black p-5 pt-14 sm:p-7 sm:pt-14"
           >
             <button
               type="button"
@@ -93,42 +91,73 @@ export default function ProjectCard({ project }) {
               <FaTimes aria-hidden="true" />
             </button>
 
-            <h2
-              id={`project-title-${project.id}`}
-              className="mb-4 text-2xl font-bold text-cyan-400"
-            >
-              {project.title}
-            </h2>
-            <p className="mb-4 text-xs font-bold text-white/70">{project.status}</p>
-            <p className="mb-4 text-white/70">
-              <strong>Objetivo:</strong> {project.objective}
-            </p>
-            <p className="mb-4 text-white/70">
-              <strong>Solução:</strong> {project.solution}
-            </p>
-            <p className="mb-4 text-white/70">
-              <strong>Resultado:</strong> {project.result}
-            </p>
+            <header className="mb-6 border-b border-white/10 pb-5">
+              <span className="mb-3 inline-flex rounded-full border border-cyan-400/30 bg-cyan-400/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-cyan-300">
+                {project.status}
+              </span>
+              <h2
+                id={`project-title-${project.id}`}
+                className="text-2xl font-bold leading-tight text-cyan-400 sm:text-3xl"
+              >
+                {project.title}
+              </h2>
+            </header>
 
-            <div className="mb-4 flex flex-wrap gap-2">
-              {project.tech.map((technology) => (
-                <span
-                  key={technology}
-                  className="rounded-full border border-white/10 px-2 py-1 text-xs text-white/60"
-                >
-                  {technology}
-                </span>
-              ))}
+            <div className="space-y-7">
+              <div className="grid gap-3 sm:grid-cols-2">
+                {[
+                  { label: "Contexto", text: project.context },
+                  { label: "Desafio", text: project.challenge },
+                  { label: "Ação", text: project.action, wide: true },
+                  { label: "Resultado", text: project.result, wide: true, highlight: true },
+                ].map((item) => (
+                  <section
+                    key={item.label}
+                    className={`rounded-lg border p-4 ${
+                      item.wide ? "sm:col-span-2" : ""
+                    } ${
+                      item.highlight
+                        ? "border-cyan-400/25 bg-cyan-400/5"
+                        : "border-white/10 bg-white/[0.03]"
+                    }`}
+                  >
+                    <h3 className="mb-2 text-xs font-semibold uppercase tracking-wider text-cyan-300">
+                      {item.label}
+                    </h3>
+                    <p className="text-sm leading-relaxed text-white/75">
+                      {item.text}
+                    </p>
+                  </section>
+                ))}
+              </div>
+
+              <section>
+                <h3 className="mb-3 text-sm font-semibold uppercase tracking-wide text-white/50">
+                  Tecnologias
+                </h3>
+                <div className="flex flex-wrap gap-2">
+                  {project.tech.map((technology) => (
+                    <span
+                      key={technology}
+                      className="rounded-full border border-white/10 px-3 py-1.5 text-xs text-white/70"
+                    >
+                      {technology}
+                    </span>
+                  ))}
+                </div>
+              </section>
+
+              <section>
+                <h3 className="mb-3 text-sm font-semibold uppercase tracking-wide text-white/50">
+                  {project.contributionDesc}
+                </h3>
+                <ul className="list-disc space-y-2 pl-5 leading-relaxed text-white/70 marker:text-cyan-400">
+                  {project.contribution.map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}
+                </ul>
+              </section>
             </div>
-
-            <p className="mb-3 font-semibold text-white/70">
-              {project.contributionDesc}
-            </p>
-            <ul className="list-disc space-y-1 pl-5 text-sm text-white/60">
-              {project.contribution.map((item) => (
-                <li key={item}>{item}</li>
-              ))}
-            </ul>
           </section>
         </div>,
         document.body,

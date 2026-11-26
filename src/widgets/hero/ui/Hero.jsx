@@ -16,7 +16,7 @@ export default function Hero() {
     },
     {
       icon: FaLinkedin,
-      href: "https://www.linkedin.com/in/guilherme-alvarenga-0834b938a/",
+      href: "https://www.linkedin.com/in/guilhermealvarenga021/",
       type: "link",
     },
     {
@@ -70,9 +70,9 @@ export default function Hero() {
           </h1>
 
           <p className="text-white/60 leading-relaxed">
-            Desenvolvedor Full Stack focado em transformar ideias em soluções
-            digitais, criando interfaces intuitivas, aplicações robustas e
-            sistemas escaláveis.
+            Desenvolvedor de software com experiência em aplicações web e
+            análise de dados. Estudante de DSM na FATEC, estou à procura de uma
+            oportunidade de estágio.
           </p>
 
           {/* ÍCONES */}
@@ -89,7 +89,7 @@ export default function Hero() {
                       aria-label="Copiar endereço de e-mail"
                       onClick={handleEmailClick}
                       className="
-                        group w-12 h-12 flex items-center justify-center
+                        group w-12 h-12 flex cursor-pointer items-center justify-center
                         rounded-full border border-white/10 bg-white/5
                         transition-all duration-300
                         hover:scale-110

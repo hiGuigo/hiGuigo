@@ -14,7 +14,7 @@ export default function Footer() {
     },
     {
       icon: FaLinkedin,
-      href: "https://www.linkedin.com/in/guilherme-alvarenga-0834b938a/",
+      href: "https://www.linkedin.com/in/guilhermealvarenga021/",
       type: "link",
     },
     {
@@ -53,7 +53,7 @@ export default function Footer() {
                     aria-label="Copiar endereço de e-mail"
                     onClick={handleCopyEmail}
                     className="
-                      group w-12 h-12 flex items-center justify-center
+                      group w-12 h-12 flex cursor-pointer items-center justify-center
                       rounded-full border border-white/10 bg-white/5
                       transition-all duration-300
                       hover:scale-110

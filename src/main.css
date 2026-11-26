@@ -9,6 +9,31 @@
   scrollbar-width: none;
 }
 
+* {
+  scrollbar-color: rgb(34 211 238 / 0.65) rgb(255 255 255 / 0.08);
+  scrollbar-width: thin;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  border-radius: 999px;
+  background: rgb(255 255 255 / 0.06);
+}
+
+*::-webkit-scrollbar-thumb {
+  border: 2px solid #000;
+  border-radius: 999px;
+  background: rgb(34 211 238 / 0.65);
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: rgb(34 211 238 / 0.9);
+}
+
 html {
   scroll-behavior: smooth;
 }
